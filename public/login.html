@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<title>Welcome Home</title>
-  </head>
-  <body>
-	  <h1>Login Sucessfully</h1>
-    <h1>Plase Subscribe my Channel</h1>
-    <h1>Like👍 share↗ and comment📝</h1>
-  </body>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel='stylesheet' href="login.css">
+  <link rel="icon" href="./favicon.png" type="image/x-icon"/>
+  <!-- include the index.js file -->
+  <script defer src="/index.js"></script>
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Tạo tài khoản</h1>
+			<span>Hãy điền đầy đủ thông tin dưới đây</span>
+			<input type="text" placeholder="Tên của bạn" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Mật khẩu" />
+			<button id="registry">Đăng ký</button>
+		</form>
+	</div>
+
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<img src="./img/logocochu.png" alt="LacHongUniversity">
+		</form>
+	</div>
+
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<img src="./img/logokhongchu.png" alt="LacHonguniversity">
+				<h4>LAC HONG UNIVERSITY</h4>
+				<p>Bạn đã có tài khoản ?</p>
+				<button class="ghost" id="signIn">Đăng nhập</button>
+			</div>
+			<form action="/login" method="POST">
+				<div class="overlay-panel overlay-right">			
+				  <h1>Đăng nhập</h1>
+				  <span>- Hoặc -</span>
+				  <input type="email" placeholder="Email" id="username"/>
+				  <input type="password" placeholder="Mật khẩu" id="password"/>
+				  <div class="forgot-password">
+					<a href="#">Quên mật khẩu ?</a>
+				  </div>
+				  <input type="submit" value="Đăng nhập">
+				  <button class="ghost" id="signUp">Đăng ký</button>
+				</div>
+			  </form>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+
+<script  src="./login.js"></script>
+</body>
 </html>

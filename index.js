@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
         "Allow-access-Allow-Origin": '*'
     })
 
-    return res.redirect('index.html');
+    return res.redirect('login.html');
 
 }).listen(3000);
 
@@ -52,7 +52,7 @@ app.post("/login", async (request, response) => {
 
             // check password
             if (res.password === password) {
-                return response.redirect('login.html');
+                return response.redirect('home.html');
             }
             else {
                 response.send("Invalid Password!❌❌❌");
