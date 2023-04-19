@@ -15,4 +15,13 @@
 </nav>
 
 </body>
+<!-- Create a footer element with the copyright information -->
+<footer>
+    &copy; <span id="year"></span> - StarDev
+</footer>
+
+<!-- Add JavaScript to dynamically update the year -->
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </html>
