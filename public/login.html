@@ -9,50 +9,19 @@
   <script defer src="/index.js"></script>
 </head>
 <body>
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Tạo tài khoản</h1>
-			<span>Hãy điền đầy đủ thông tin dưới đây</span>
-			<input type="text" placeholder="Tên của bạn" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Mật khẩu" />
-			<button id="registry">Đăng ký</button>
+	<div class="container">
+		<form action="/login">
+			<h1>Login</h1>
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit">Login</button>
 		</form>
 	</div>
-
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<img src="./img/logocochu.png" alt="LacHongUniversity">
-		</form>
-	</div>
-
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<img src="./img/logokhongchu.png" alt="LacHonguniversity">
-				<h4>LAC HONG UNIVERSITY</h4>
-				<p>Bạn đã có tài khoản ?</p>
-				<button class="ghost" id="signIn">Đăng nhập</button>
-			</div>
-			<form action="/login" method="POST">
-				<div class="overlay-panel overlay-right">			
-				  <h1>Đăng nhập</h1>
-				  <span>- Hoặc -</span>
-				  <input type="email" placeholder="Email" id="username"/>
-				  <input type="password" placeholder="Mật khẩu" id="password"/>
-				  <div class="forgot-password">
-					<a href="#">Quên mật khẩu ?</a>
-				  </div>
-				  <input type="submit" value="Đăng nhập">
-				  <button class="ghost" id="signUp">Đăng ký</button>
-				</div>
-			  </form>
-		</div>
-	</div>
-</div>
 <!-- partial -->
-
 <script  src="./login.js"></script>
 </body>
 </html>
